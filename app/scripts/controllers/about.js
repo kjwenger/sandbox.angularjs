@@ -2,16 +2,16 @@
 
 /**
  * @ngdoc function
- * @name sandboxangularjsApp.controller:AboutCtrl
+ * @name app.controller:about
  * @description
- * # AboutCtrl
- * Controller of the sandboxangularjsApp
+ * # about
+ * Controller of the app
  */
-angular.module('sandboxangularjsApp')
-  .controller('AboutCtrl', function () {
+angular.module('app')
+  .controller('about', ['$scope', '$http', function ($scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+  }]);

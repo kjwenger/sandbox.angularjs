@@ -1,5 +1,5 @@
 {
-  "name": "sandboxangularjs",
+  "name": "sandbox_angularjs",
   "private": true,
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",

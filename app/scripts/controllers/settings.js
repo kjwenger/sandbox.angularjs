@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name app.controller:main
+ * @name app.controller:settings
  * @description
- * # main
+ * # settings
  * Controller of the app
  */
 angular.module('app')
-  .controller('main', ['$scope', '$http', function ($scope) {
+  .controller('settings', ['$scope', '$http', function ($scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name sandboxangularjsApp
+ * @name app
  * @description
- * # sandboxangularjsApp
+ * # app
  *
  * Main module of the application.
  */
 angular
-  .module('sandboxangularjsApp', [
+  .module('app', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -21,12 +21,22 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
+        controller: 'main',
         controllerAs: 'main'
+      })
+      .when('/settings', {
+        templateUrl: 'views/settings.html',
+        controller: 'settings',
+        controllerAs: 'settings'
+      })
+      .when('/help', {
+        templateUrl: 'views/help.html',
+        controller: 'help',
+        controllerAs: 'help'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
+        controller: 'about',
         controllerAs: 'about'
       })
       .otherwise({

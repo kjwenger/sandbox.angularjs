@@ -1,23 +1,23 @@
 'use strict';
 
-describe('Controller: AboutCtrl', function () {
+describe('Controller: about', function () {
 
   // load the controller's module
-  beforeEach(module('sandboxangularjsApp'));
+  beforeEach(module('app'));
 
-  var AboutCtrl,
+  var about,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    AboutCtrl = $controller('AboutCtrl', {
+    about = $controller('about', {
       $scope: scope
       // place here mocked dependencies
     });
   }));
 
   it('should attach a list of awesomeThings to the scope', function () {
-    expect(AboutCtrl.awesomeThings.length).toBe(3);
+    expect(about.awesomeThings.length).toBe(3);
   });
 });

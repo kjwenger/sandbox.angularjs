@@ -15,7 +15,7 @@
     "angular-mocks": "^1.4.0"
   },
   "appPath": "app",
-  "moduleName": "sandboxangularjsApp",
+  "moduleName": "app",
   "overrides": {
     "bootstrap": {
       "main": [
